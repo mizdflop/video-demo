@@ -1,0 +1,59 @@
+<template name="video_home">
+
+	<div class="container">
+			<div class="row row-centered">
+				<div class="col-xs-12 col-centered">
+	 				<div id="player"></div>
+
+					<h2>Fillipio Candio at the Final Table</h2>
+					<p class="dek">This is a dek for for this video. It's super-terrific.</p>
+				</div>
+				<hr>
+
+		</div>
+		<div class="row ">
+			<div class="col-xs-8  slider-holder">
+				<h2>Latest</h2>
+				<div class="my-slider">
+					{{#each latestVideos}}
+						<div><a class ='img-clickable' href="#"><img src="http://img.youtube.com/vi/{{youtubeId}}/0.jpg"></a></div>
+					{{/each}}
+
+				</div>
+
+			</div>
+
+		</div>
+		<div class="row ">
+			<h2>Sports</h2>
+			<div class="col-xs-8  slider-holder">
+				<div class="my-slider">
+					{{#each latestSports}}
+						<div><a class ='img-clickable' href="#"><img src="http://img.youtube.com/vi/{{youtubeId}}/0.jpg"></a></div>
+					{{/each}}
+
+				</div>
+
+			</div>
+
+		</div>
+		<div class="row ">
+			<h2>News</h2>
+
+			<div class="col-xs-8  slider-holder">
+				<div class="my-slider">
+					{{#each latestNews}}
+						<div><a class ='img-clickable' href="#"><img src="http://img.youtube.com/vi/{{youtubeId}}/0.jpg"></a></div>
+					{{/each}}
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+</template>
